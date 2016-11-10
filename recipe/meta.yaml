@@ -1,6 +1,6 @@
 {% set name = "python-dotenv" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "7e371d6ecc0019535f350e8ea413fbb226a9f8c16c80339e347664f7a0613202" %}
+{% set version = "0.6.1" %}
+{% set sha256 = "bd8ed28f7365de0cbd0a28bf77bc5171444e7031853172749b5cea6c85a3928f" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   home: https://github.com/theskumar/python-dotenv/
   license: BSD 3-Clause
   license_family: BSD
-#  license_file: LICENSE  # When added to MANIFEST.in – theskumar/python-dotenv#33
+  license_file: LICENSE
   summary: 'Get and set values in your .env file in local and production servers like Heroku does.'
   dev_url: https://github.com/theskumar/python-dotenv/
 
