@@ -11,6 +11,18 @@ Summary: Get and set values in your .env file in local and production servers li
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-dotenv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-dotenv-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-dotenv-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-dotenv-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-dotenv-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-dotenv-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dotenv/badges/version.svg)](https://anaconda.org/conda-forge/python-dotenv)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dotenv/badges/downloads.svg)](https://anaconda.org/conda-forge/python-dotenv)
+
 Installing python-dotenv
 ========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `python-dotenv` available on your 
 ```
 conda search python-dotenv --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-dotenv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-dotenv-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-dotenv-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-dotenv-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-dotenv-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-dotenv-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dotenv/badges/version.svg)](https://anaconda.org/conda-forge/python-dotenv)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dotenv/badges/downloads.svg)](https://anaconda.org/conda-forge/python-dotenv)
 
 
 Updating python-dotenv-feedstock
