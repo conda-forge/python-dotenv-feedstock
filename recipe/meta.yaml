@@ -1,6 +1,6 @@
 {% set name = "python-dotenv" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "509736185257111613009974e666568a1b031b028b61b500ef1ab4ee780089d5" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "122290a38ece9fe4f162dc7c95cae3357b983505830a154d3c98ef7f6c6cea77" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - dotenv = dotenv:cli.cli
