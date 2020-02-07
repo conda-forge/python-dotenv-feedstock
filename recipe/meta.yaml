@@ -1,6 +1,6 @@
 {% set name = "python-dotenv" %}
-{% set version = "0.10.5" %}
-{% set sha256 = "f254bfd0c970d64ccbb6c9ebef3667ab301a71473569c991253a481f1c98dddc" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "8429f459fc041237d98c9ff32e1938e7e5535b5ff24388876315a098027c3a57" %}
 
 package:
   name: {{ name|lower }}
