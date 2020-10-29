@@ -5,11 +5,11 @@ Home: https://github.com/theskumar/python-dotenv/
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-dotenv-feedstock/blob/master/LICENSE.txt)
 
 Summary: Get and set values in your .env file in local and production servers like Heroku does.
 
-
+Development: https://github.com/theskumar/python-dotenv/
 
 Current build status
 ====================
