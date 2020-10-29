@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/theskumar/python-dotenv/
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Get and set values in your .env file in local and production servers like Heroku does.
