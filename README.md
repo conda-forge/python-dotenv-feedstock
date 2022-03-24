@@ -5,7 +5,7 @@ Home: https://github.com/theskumar/python-dotenv/
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-dotenv-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-dotenv-feedstock/blob/main/LICENSE.txt)
 
 Summary: Get and set values in your .env file in local and production servers like Heroku does.
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5175&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-dotenv-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5175&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-dotenv-feedstock?branchName=main">
       </a>
     </td>
   </tr>
