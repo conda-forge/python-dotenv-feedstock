@@ -35,6 +35,10 @@ outputs:
     test:
       imports:
         - dotenv
+      requires:
+        - pip
+      commands:
+        - pip check
 
   - name: python-dotenv-with-cli
     build:
@@ -50,7 +54,10 @@ outputs:
     test:
       imports:
         - dotenv
+      requires:
+        - pip
       commands:
+        - pip check
         - dotenv --help
 
   - name: python-dotenv
@@ -67,7 +74,10 @@ outputs:
     test:
       imports:
         - dotenv
+      requires:
+        - pip
       commands:
+        - pip check
         - dotenv --help
 
 about:
