@@ -1,15 +1,15 @@
-About python-dotenv
-===================
-
-Home: https://github.com/theskumar/python-dotenv/
-
-Package license: BSD-3-Clause
+About python-dotenv-feedstock
+=============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-dotenv-feedstock/blob/main/LICENSE.txt)
 
-Summary: Get and set values in your .env file in local and production servers like Heroku does.
+Home: https://saurabh-kumar.com/python-dotenv
 
-Development: https://github.com/theskumar/python-dotenv/
+Package license: BSD-3-Clause
+
+Summary: Read key-value pairs from a .env file and set them as environment variables
+
+Development: https://github.com/theskumar/python-dotenv
 
 Current build status
 ====================
@@ -30,6 +30,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv-green.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv--base-green.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv--with--cli-green.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) |
 
 Installing python-dotenv
 ========================
@@ -41,16 +43,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-dotenv` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `python-dotenv, python-dotenv-base, python-dotenv-with-cli` can be installed with `conda`:
 
 ```
-conda install python-dotenv
+conda install python-dotenv python-dotenv-base python-dotenv-with-cli
 ```
 
 or with `mamba`:
 
 ```
-mamba install python-dotenv
+mamba install python-dotenv python-dotenv-base python-dotenv-with-cli
 ```
 
 It is possible to list all of the versions of `python-dotenv` available on your platform with `conda`:
@@ -145,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@proinsias](https://github.com/proinsias/)
 
