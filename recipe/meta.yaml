@@ -81,11 +81,12 @@ outputs:
         - dotenv --help
 
 about:
-  home: https://github.com/theskumar/python-dotenv
+  home: https://saurabh-kumar.com/python-dotenv
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Read key-value pairs from a .env file and set them as environment variables
+  dev_url: https://github.com/theskumar/python-dotenv
 
 extra:
   feedstock-name: python-dotenv
