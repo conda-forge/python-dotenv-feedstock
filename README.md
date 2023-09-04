@@ -30,7 +30,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv-green.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv.svg)](https://anaconda.org/conda-forge/python-dotenv) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv--base-green.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv-base.svg)](https://anaconda.org/conda-forge/python-dotenv-base) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-python--dotenv--with--cli-green.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dotenv-with-cli.svg)](https://anaconda.org/conda-forge/python-dotenv-with-cli) |
 
 Installing python-dotenv
@@ -43,16 +42,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-dotenv, python-dotenv-base, python-dotenv-with-cli` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `python-dotenv, python-dotenv-with-cli` can be installed with `conda`:
 
 ```
-conda install python-dotenv python-dotenv-base python-dotenv-with-cli
+conda install python-dotenv python-dotenv-with-cli
 ```
 
 or with `mamba`:
 
 ```
-mamba install python-dotenv python-dotenv-base python-dotenv-with-cli
+mamba install python-dotenv python-dotenv-with-cli
 ```
 
 It is possible to list all of the versions of `python-dotenv` available on your platform with `conda`:
