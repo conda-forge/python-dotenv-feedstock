@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: python-dotenv-split
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-dotenv/python-dotenv-{{ version }}.tar.gz
-  sha256: a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba
+  sha256: e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
