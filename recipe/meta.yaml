@@ -3,7 +3,7 @@
 {% set PYTHON = PYTHON | default("$PYTHON") %}
 
 package:
-  name: python-dotenv-split
+  name: python-dotenv
   version: {{ version }}
 
 source:
