@@ -49,7 +49,7 @@ outputs:
         - dotenv
       requires:
         - pip
-        - python {{ python_min }}
+        - python !={{ python_min }}.*
       commands:
         - pip check
         - dotenv --help
