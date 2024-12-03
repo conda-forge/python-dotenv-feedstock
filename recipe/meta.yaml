@@ -1,5 +1,7 @@
 {% set version = "1.0.1" %}
 
+{% set PYTHON = PYTHON | default("$PYTHON") %}
+
 package:
   name: python-dotenv-split
   version: {{ version }}
@@ -11,6 +13,10 @@ source:
 build:
   number: 1
   noarch: python
+  script: 
+    - {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+  entry_points:
+    - dotenv=dotenv.__main__:cli
 
 requirements:
   host:
@@ -19,39 +25,25 @@ requirements:
   run:
     - python >={{ python_min }}
 
+test:
+  imports:
+    - dotenv
+  requires:
+    - pip
+    - python {{ python_min }}
+  commands:
+    - pip check
+
 outputs:
   - name: python-dotenv
-    build:
-      noarch: python
-      script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
-      entry_points:
-        - dotenv=dotenv.__main__:cli
-    requirements:
-      host:
-        - pip
-        - python {{ python_min }}
-      run:
-        - python >={{ python_min }}
-    test:
-      imports:
-        - dotenv
-      requires:
-        - pip
-        - python {{ python_min }}
-      commands:
-        - pip check
-
+  
   - name: python-dotenv-with-cli
     build:
-      noarch: python
+      noarch: generic
     requirements:
-      host:
-        - pip
-        - python {{ python_min }}
       run:
         - {{ pin_subpackage("python-dotenv", exact=True) }}
         - click >=5.0
-        - python >={{ python_min }}
     test:
       imports:
         - dotenv
@@ -61,7 +53,6 @@ outputs:
       commands:
         - pip check
         - dotenv --help
-
 
 about:
   home: https://saurabh-kumar.com/python-dotenv
