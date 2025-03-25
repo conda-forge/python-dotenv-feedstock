@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 {% set PYTHON = PYTHON | default("$PYTHON") %}
 
@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/python-dotenv/python-dotenv-{{ version }}.tar.gz
-  sha256: e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca
+  url: https://pypi.org/packages/source/p/python-dotenv/python_dotenv-{{ version }}.tar.gz
+  sha256: 41f90bc6f5f177fb41f53e87666db362025010eb28f60a01c9143bfa33a2b2d5
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: 
+  script:
     - {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
   entry_points:
     - dotenv=dotenv.__main__:cli
@@ -36,7 +36,7 @@ test:
 
 outputs:
   - name: python-dotenv
-  
+
   - name: python-dotenv-with-cli
     build:
       noarch: generic
