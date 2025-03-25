@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 1.1.0
+
+recipe:
+  name: python-dotenv
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/p/python-dotenv/python_dotenv-${{ version }}.tar.gz
+  sha256: 41f90bc6f5f177fb41f53e87666db362025010eb28f60a01c9143bfa33a2b2d5
+
+build:
+  number: 0
+  noarch: python
+
+outputs:
+  - package:
+      name: python-dotenv
+    build:
+      number: 0
+      noarch: python
+      script:
+        - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
+      python:
+        entry_points:
+          - dotenv=dotenv.__main__:cli
+    requirements:
+      host:
+        - pip
+        - python ${{ python_min }}.*
+      run:
+        - python >=${{ python_min }}
+    tests:
+      - python:
+          imports: dotenv
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - 3.13.*
+      - requirements:
+          run:
+            - python ${{ python_min }}.*
+        script:
+          - pip check
+
+  - package:
+      name: python-dotenv-with-cli
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - ${{ pin_subpackage("python-dotenv", exact=True) }}
+        - click >=5.0
+    tests:
+      - python:
+          imports: dotenv
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - 3.13.*
+      - requirements:
+          run:
+            - python ${{ python_min }}.*
+        script:
+          - dotenv --help
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Read key-value pairs from a .env file and set them as environment variables
+  homepage: https://saurabh-kumar.com/python-dotenv
+  repository: https://github.com/theskumar/python-dotenv
+
+extra:
+  feedstock-name: python-dotenv
+  recipe-maintainers:
+    - proinsias
+    - bollwyvl
