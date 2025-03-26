@@ -13,14 +13,13 @@ source:
   sha256: 41f90bc6f5f177fb41f53e87666db362025010eb28f60a01c9143bfa33a2b2d5
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 outputs:
   - package:
       name: python-dotenv
     build:
-      number: 0
       noarch: python
       script:
         - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
@@ -31,6 +30,7 @@ outputs:
       host:
         - pip
         - python ${{ python_min }}.*
+        - setuptools
       run:
         - python >=${{ python_min }}
     tests:
