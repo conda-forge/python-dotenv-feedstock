@@ -2,7 +2,8 @@
 schema_version: 1
 
 context:
-  version: "1.1.1"
+  version: "1.2.1"
+  python_check_max: "3.14"
 
 recipe:
   name: python-dotenv
@@ -10,7 +11,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/p/python-dotenv/python_dotenv-${{ version }}.tar.gz
-  sha256: a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab
+  sha256: 42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6
 
 build:
   number: 0
@@ -25,12 +26,13 @@ outputs:
         - ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation --disable-pip-version-check
       python:
         entry_points:
-          - dotenv=dotenv.__main__:cli
+          # the entry point is created here, but needs `click`
+          - dotenv = dotenv.__main__:cli
     requirements:
       host:
         - pip
         - python ${{ python_min }}.*
-        - setuptools
+        - setuptools >=77.0
       run:
         - python >=${{ python_min }}
     tests:
@@ -39,7 +41,7 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            - 3.13.*
+            - ${{ python_check_max }}.*
       - requirements:
           run:
             - python ${{ python_min }}.*
@@ -60,7 +62,7 @@ outputs:
           pip_check: true
           python_version:
             - ${{ python_min }}.*
-            - 3.13.*
+            - ${{ python_check_max }}.*
       - requirements:
           run:
             - python ${{ python_min }}.*
