@@ -3,13 +3,15 @@ About python-dotenv-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-dotenv-feedstock/blob/main/LICENSE.txt)
 
-Home: https://saurabh-kumar.com/python-dotenv
+Home: https://pypi.org/project/python-dotenv
 
 Package license: BSD-3-Clause
 
 Summary: Read key-value pairs from a .env file and set them as environment variables
 
 Development: https://github.com/theskumar/python-dotenv
+
+Documentation: https://saurabh-kumar.com/python-dotenv
 
 Current build status
 ====================
