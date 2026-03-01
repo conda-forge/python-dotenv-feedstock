@@ -73,8 +73,9 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Read key-value pairs from a .env file and set them as environment variables
-  homepage: https://saurabh-kumar.com/python-dotenv
+  homepage: https://pypi.org/project/python-dotenv
   repository: https://github.com/theskumar/python-dotenv
+  documentation: https://saurabh-kumar.com/python-dotenv
 
 extra:
   feedstock-name: python-dotenv
