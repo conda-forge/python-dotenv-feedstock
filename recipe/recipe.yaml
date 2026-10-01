@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.3"
+  version: "1.2.4"
   python_check_max: "3.14"
 
 recipe:
@@ -11,7 +11,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/p/python-dotenv/python_dotenv-${{ version }}.tar.gz
-  sha256: a20a594dabeaa385725aa239d5244871c143ecb356add8a20fcf23773a6c3a35
+  sha256: f0d53e69935a851c0dcc78f3ab7aaccd8cabef0b92382b576b824212902873c0
 
 build:
   number: 0
